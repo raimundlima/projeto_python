@@ -1,0 +1,52 @@
+.titulo { 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: blueviolet;
+    
+
+
+}
+
+.titulo1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    color: blueviolet;
+}
+
+.tabela {
+    border: 1px solid black;
+    width: 500px;
+    margin: auto;
+}
+
+.componentes {
+    margin-bottom: 20px;
+   
+
+}
+
+.componentes label{
+    display: block;
+    font-weight: bold;
+}
+
+.componentes input, select, textarea{
+    width: 400px;
+}
+
+.componentes button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    color:bisque;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #0275d8;
+
+    
+
+}
+
+.componentes button:hover{
+    background-color: #d9534f;
+}
