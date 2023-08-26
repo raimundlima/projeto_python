@@ -19,7 +19,8 @@ from django.urls import path
 from app_cad_filmes import views
 
 urlpatterns = [
-    path ('',views.home),
-    path('cadastro/',views.cadastro),
-    path('lista/',views.lista),
+    path ('',views.home,name='home'),
+    path('cadastro/',views.cadastro, name='cadastro'),
+    path('lista/',views.lista, name='lista'),
+   
 ]
