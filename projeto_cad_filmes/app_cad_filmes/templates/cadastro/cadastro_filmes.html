@@ -30,16 +30,18 @@
             </div>
           </nav>
         <h1 class="titulo1">Cadastro de Filmes</h1>
-        <form action="" method="post">
+        <form action="{% url 'lista'%}" method="post">
+          {% csrf_token %}
+          {{ form.as_p }}
             
             <div class="mb-3">
                 <label for="titulo" class="form-label">Titulo:</label>
-                <input type="text" class="form-control form-control-lg" name="titulo" id="titulo" placeholder="digite o título do filme aqui...">
+                <input type="text" class="form-control form-control-lg" input name="nome" id="titulo" placeholder="digite o título do filme aqui...">
      
             </div>
              <div class="mb-3">
                  <label for="genero" class="form-label">Gênero</label>
-                 <select class="form-select form-select-lg" name="genero" id="genero">
+                 <select class="form-select form-select-lg" input name="genero" id="genero">
                      <option value=""></option>
                      <option value="acao">Ação</option>
                      <option value="comedia">Comedia</option>
@@ -50,18 +52,18 @@
              </div>
              <div class="mb-3"><!--Espaço para escolher ano de lançamento-->
                  <label class="form-label" for="ano">Ano de Lançamento</label>
-                 <input type="number" class="form-control form-control-lg" name="ano" id="ano" min="1900" max="2100" step="1" value="2023">
+                 <input type="number" class="form-control form-control-lg" input name="ano_lancamento" id="ano" min="1900" max="2100" step="1" value="2023">
              </div>
      
              <div class="mb-3">
                  <label for="sinopse">Sinopse</label>
-                 <textarea class="form-control form-control-lg" name="sinopse" id="sinopse" 
+                 <textarea class="form-control form-control-lg" input name="Sinopse" id="sinopse" 
                      cols="30" rows="5"></textarea>
              </div>
              
              <div class="mb-3">
               <label for="sinopse">Capa</label>
-              <textarea class="form-control form-control-lg" name="Capa" id="Capa" 
+              <textarea class="form-control form-control-lg" input name="Capa" id="Capa" 
                   cols="30" rows="5"></textarea>
           </div>
              <div class="d-grid gap-2 d-md-flex justify-content-md-center"><!--Botões do form-->

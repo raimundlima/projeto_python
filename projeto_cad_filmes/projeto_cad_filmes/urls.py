@@ -21,6 +21,6 @@ from app_cad_filmes import views
 urlpatterns = [
     path ('',views.home,name='home'),
     path('cadastro/',views.cadastro, name='cadastro'),
-    path('lista/',views.lista, name='lista'),
+    path('lista/',views.lista_filmes, name='lista'),
    
 ]
